@@ -68,10 +68,10 @@ while True:
 while True:
     fg, bg = dotValue()
 
+    for i in range(len(image)):
+        for j in range(len(image[0])):
+            print(fg if image[i, j] < 100 else bg, end="")
+        print()
+
     if inputConfirmation("Do you want to continue? (y/n) "):
         break
-
-for i in range(len(image)):
-    for j in range(len(image[0])):
-        print(fg if image[i, j] < 100 else bg, end="")
-    print()
