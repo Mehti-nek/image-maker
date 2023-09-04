@@ -32,12 +32,12 @@ def dotValue():
     return fg_value, bg_value
 
 
-# root = tk.Tk()
-# root.withdraw()
+root = tk.Tk()
+root.withdraw()
 
-# file_path = filedialog.askopenfilename()
-# img = cv2.imread(file_path, 0)
-img = cv2.imread('sonic.jpg', 0)
+file_path = filedialog.askopenfilename()
+img = cv2.imread(file_path, 0)
+# img = cv2.imread('sonic.jpg', 0)
 
 while True:
     blurvalue = inputInt("Enter a value for blur: normal(5) ")
